@@ -1,0 +1,30 @@
+2024-10-10 15:51:45,926 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-10 15:51:45,926 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Configure stats pid to 1367187
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/settings
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:51:45,927 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:51:45,928 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-10 15:51:45,929 INFO    MainThread:1367187 [wandb_init.py:_log_setup():532] Logging user logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_155145-jlmuh1n4/logs/debug.log
+2024-10-10 15:51:45,931 INFO    MainThread:1367187 [wandb_init.py:_log_setup():533] Logging internal logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_155145-jlmuh1n4/logs/debug-internal.log
+2024-10-10 15:51:45,931 INFO    MainThread:1367187 [wandb_init.py:init():617] calling init triggers
+2024-10-10 15:51:45,932 INFO    MainThread:1367187 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-10 15:51:45,932 INFO    MainThread:1367187 [wandb_init.py:init():662] wandb.init() called when a run is still active
+2024-10-10 15:56:17,836 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-10 15:56:17,837 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Configure stats pid to 1367187
+2024-10-10 15:56:17,837 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-10 15:56:17,838 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/settings
+2024-10-10 15:56:17,838 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-10 15:56:17,838 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-10-10 15:56:17,838 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:56:17,839 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:56:17,839 INFO    MainThread:1367187 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-10 15:56:17,841 INFO    MainThread:1367187 [wandb_init.py:_log_setup():532] Logging user logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_155616-d0t3xhpf/logs/debug.log
+2024-10-10 15:56:17,843 INFO    MainThread:1367187 [wandb_init.py:_log_setup():533] Logging internal logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_155616-d0t3xhpf/logs/debug-internal.log
+2024-10-10 15:56:17,843 INFO    MainThread:1367187 [wandb_init.py:init():617] calling init triggers
+2024-10-10 15:56:17,844 INFO    MainThread:1367187 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-10 15:56:17,844 INFO    MainThread:1367187 [wandb_init.py:init():662] wandb.init() called when a run is still active

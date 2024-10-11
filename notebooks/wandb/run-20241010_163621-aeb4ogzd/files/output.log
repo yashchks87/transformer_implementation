@@ -1,0 +1,36 @@
+  0%|          | 0/59 [00:00<?, ?batch/s]/databricks/python/lib/python3.11/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+100%|██████████| 59/59 [00:37<00:00,  1.58batch/s, loss=2.58e+3]
+100%|██████████| 1/1 [00:13<00:00, 13.07s/batch, loss=42.3]
+Epoch 0/50 | Train Loss: 43.65878024343717 | Val Loss: 42.26526641845703
+100%|██████████| 59/59 [00:35<00:00,  1.68batch/s, loss=2.26e+3]
+  0%|          | 0/1 [00:00<?, ?batch/s]/databricks/python/lib/python3.11/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+100%|██████████| 1/1 [00:12<00:00, 12.68s/batch, loss=39.7]
+Epoch 1/50 | Train Loss: 38.33268065371756 | Val Loss: 39.66394805908203
+  0%|          | 0/59 [00:00<?, ?batch/s]/databricks/python/lib/python3.11/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+ 12%|█▏        | 7/59 [00:07<00:37,  1.39batch/s, loss=259]Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f4f58436980>
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/databricks/python/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1462, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 165, in is_alive
+    returncode = self._popen.poll()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+ 12%|█▏        | 7/59 [00:15<01:58,  2.27s/batch, loss=259]
+
+KeyboardInterrupt
+
+  0%|          | 0/59 [00:00<?, ?batch/s]/databricks/python/lib/python3.11/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+100%|██████████| 59/59 [00:36<00:00,  1.60batch/s, loss=1.92e+3]
+100%|██████████| 1/1 [00:13<00:00, 13.14s/batch, loss=30.3]
+Epoch 0/50 | Train Loss: 32.5441508212332 | Val Loss: 30.257728576660156
+  0%|          | 0/59 [00:02<?, ?batch/s]

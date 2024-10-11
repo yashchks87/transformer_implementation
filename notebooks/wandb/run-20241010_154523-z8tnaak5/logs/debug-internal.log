@@ -1,0 +1,3 @@
+{"time":"2024-10-10T15:45:24.825155536Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-10T15:45:24.825246105Z","level":"INFO","msg":"created symlink","path":"/Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_154523-z8tnaak5/logs/debug-core.log"}
+{"time":"2024-10-10T15:45:24.827252078Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}

@@ -1,0 +1,15 @@
+ 17%|█▋        | 17/103 [00:18<01:08,  1.25batch/s, loss=64.7]Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f0a58d0af20>
+Traceback (most recent call last):
+  File "/databricks/python/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/databricks/python/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1462, in _shutdown_workers
+    if w.is_alive():
+       ^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/process.py", line 165, in is_alive
+    returncode = self._popen.poll()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+ 17%|█▋        | 17/103 [00:26<02:13,  1.56s/batch, loss=64.7]

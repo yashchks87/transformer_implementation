@@ -1,0 +1,41 @@
+2024-10-10 14:28:30,546 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-10 14:28:30,546 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Configure stats pid to 4558
+2024-10-10 14:28:30,546 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/settings
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 14:28:30,547 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-10 14:28:30,549 INFO    MainThread:4558 [wandb_init.py:_log_setup():532] Logging user logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_142828-cqm9whdr/logs/debug.log
+2024-10-10 14:28:30,551 INFO    MainThread:4558 [wandb_init.py:_log_setup():533] Logging internal logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_142828-cqm9whdr/logs/debug-internal.log
+2024-10-10 14:28:30,551 INFO    MainThread:4558 [wandb_init.py:init():617] calling init triggers
+2024-10-10 14:28:30,551 INFO    MainThread:4558 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-10 14:28:30,551 INFO    MainThread:4558 [wandb_init.py:init():667] starting backend
+2024-10-10 14:28:30,551 INFO    MainThread:4558 [wandb_init.py:init():671] sending inform_init request
+2024-10-10 14:28:30,724 INFO    MainThread:4558 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-10 14:28:30,725 INFO    MainThread:4558 [wandb_init.py:init():684] backend started and connected
+2024-10-10 14:28:30,784 INFO    MainThread:4558 [wandb_init.py:init():779] updated telemetry
+2024-10-10 14:28:31,550 INFO    MainThread:4558 [wandb_init.py:init():812] communicating run to backend with 90.0 second timeout
+2024-10-10 14:28:32,232 INFO    MainThread:4558 [wandb_init.py:init():863] starting run threads in backend
+2024-10-10 14:28:32,915 INFO    MainThread:4558 [wandb_run.py:_console_start():2465] atexit reg
+2024-10-10 14:28:32,915 INFO    MainThread:4558 [wandb_run.py:_redirect():2313] redirect: wrap_raw
+2024-10-10 14:28:32,915 INFO    MainThread:4558 [wandb_run.py:_redirect():2378] Wrapping output streams.
+2024-10-10 14:28:32,915 INFO    MainThread:4558 [wandb_run.py:_redirect():2403] Redirects installed.
+2024-10-10 14:28:33,067 INFO    MainThread:4558 [wandb_init.py:init():907] run started, returning control to user process
+2024-10-10 15:08:01,404 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-10 15:08:01,404 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Configure stats pid to 4558
+2024-10-10 15:08:01,404 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from /root/.config/wandb/settings
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/settings
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-10-10 15:08:01,405 INFO    MainThread:4558 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-10 15:08:01,407 INFO    MainThread:4558 [wandb_init.py:_log_setup():532] Logging user logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_150759-j6vl1jva/logs/debug.log
+2024-10-10 15:08:01,409 INFO    MainThread:4558 [wandb_init.py:_log_setup():533] Logging internal logs to /Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/notebooks/wandb/run-20241010_150759-j6vl1jva/logs/debug-internal.log
+2024-10-10 15:08:01,409 INFO    MainThread:4558 [wandb_init.py:init():617] calling init triggers
+2024-10-10 15:08:01,409 INFO    MainThread:4558 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-10 15:08:01,409 INFO    MainThread:4558 [wandb_init.py:init():662] wandb.init() called when a run is still active

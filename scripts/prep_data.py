@@ -1,8 +1,9 @@
 from transformers import AutoTokenizer # type: ignore
-import dask.dataframe as dd # type: ignore
+# import dask.dataframe as dd # type: ignore
 from torch.utils.data import Dataset, DataLoader # type: ignore
 from sklearn.model_selection import train_test_split # type: ignore
 import logging
+import pandas as pd
 
 
 
@@ -33,8 +34,8 @@ class TranslateDataset(Dataset):
         self.french_values = self.csv['fr'].values
         # self.english_values = english_values
         # self.french_values = french_values
-        self.english_tokenizer = AutoTokenizer.from_pretrained('/home/paperspace/bert-base-cased')
-        self.french_tokenizer = AutoTokenizer.from_pretrained('/home/paperspace/flaubert-base-cased')
+        self.english_tokenizer = AutoTokenizer.from_pretrained('/Volumes/daai_ke_team/default/mfg_ai_images/bert_data/bert-base-cased/')
+        self.french_tokenizer = AutoTokenizer.from_pretrained('/Volumes/daai_ke_team/default/mfg_ai_images/bert_data/flaubert-base-cased/')
 
     def __len__(self):
         return len(self.english_values)
@@ -42,21 +43,25 @@ class TranslateDataset(Dataset):
     def __getitem__(self, idx):
         english = self.english_values[idx]
         french = self.french_values[idx]
-        input_tokenized = self.english_tokenizer(english, max_length=50, padding='max_length', truncation=True, return_tensors='pt')
-        output_tokenized = self.french_tokenizer(french, max_length=50, padding='max_length', truncation=True, return_tensors='pt')
+        input_tokenized = self.english_tokenizer(str(english), max_length=35, padding='max_length', truncation=True, return_tensors='pt')
+        output_tokenized = self.french_tokenizer(str(french), max_length=35, padding='max_length', truncation=True, return_tensors='pt')
         return input_tokenized['input_ids'].squeeze(0), output_tokenized['input_ids'].squeeze(0)
 
 def get_datasets(csv_path, batch_size, test_size):
     print('Reading CSV file...')
-    csv = dd.read_csv(csv_path).compute()
+    # csv = dd.read_csv(csv_path).compute()
+    csv = pd.read_csv(csv_path)
+    # csv = csv[:100000]
+    csv['en_len'] = csv['en'].apply(lambda x: len(str(x).split()))
+    csv = csv[csv['en_len'] < 30]
     train, val, test = split_datasets(csv, test_size = test_size)
     train_dataset = TranslateDataset(train)
     val_dataset = TranslateDataset(val)
     test_dataset = TranslateDataset(test)
     print('Datasets are created.')
     # Prep the dataloaders
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers = 54)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers = 54)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers = 54)
     print('DataLoaders are created.')
     return train_loader, val_loader, test_loader

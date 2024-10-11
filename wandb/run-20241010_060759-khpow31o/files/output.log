@@ -1,0 +1,17 @@
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 154/154 [01:34<00:00,  1.63batch/s, loss=357]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:11<00:00,  5.74s/batch, loss=3.81]
+Epoch 0/10 | Train Loss: 2.3206178228576464 | Val Loss: 1.9064103960990906
+ 59%|███████████████████████████████████████████████████████████████████████████████████▎                                                         | 91/154 [00:59<00:40,  1.54batch/s, loss=164]
+Traceback (most recent call last):
+  File "/Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/scripts/train.py", line 98, in <module>
+    train_model(model, train_loader, val_loader, epochs = 10)
+  File "/Workspace/Users/yash.choksi@intusurg.com/transformer_implementation/scripts/train.py", line 79, in train_model
+    loss.backward()
+  File "/root/transformer_env/lib/python3.11/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/root/transformer_env/lib/python3.11/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/root/transformer_env/lib/python3.11/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

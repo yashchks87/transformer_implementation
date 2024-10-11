@@ -120,6 +120,7 @@ class Transformer(nn.Module):
 
         self.fc = nn.Linear(d_model, tgt_vocab_size)
         self.dropout = nn.Dropout(dropout)
+        self.loss = nn.CrossEntropyLoss(ignore_index = 0)
 
     def generate_mask(self, src, tgt):
         src_mask = (src != 0).unsqueeze(1).unsqueeze(2)
@@ -130,7 +131,7 @@ class Transformer(nn.Module):
         tgt_mask = tgt_mask & nopeak_mask
         return src_mask, tgt_mask
 
-    def forward(self, src, tgt):
+    def forward(self, src, tgt, actual_tgt):
         src_mask, tgt_mask = self.generate_mask(src, tgt)
         src_embedded = self.dropout(self.positional_encoding(self.encoder_embedding(src)))
         # src_embedded = (self.positional_encoding(self.encoder_embedding(src)))
@@ -147,5 +148,14 @@ class Transformer(nn.Module):
         for dec_layer in self.decoder_layers:
             dec_output = dec_layer(dec_output, enc_output, src_mask, tgt_mask)
 
+        # output = output.permute(0, 2, 1)
+                        # tgt = tgt[:, 1:]
         output = self.fc(dec_output)
-        return output
+        actual_tgt = actual_tgt[:, 1:]
+        output = output.permute(0, 2, 1)
+        # tgt = tgt[:, 1:]
+        # return output, tgt
+        # output = output.permute(0, 2, 1)
+        # tgt = tgt[:, 1:]
+        loss_val = self.loss(output, actual_tgt)
+        return output, loss_val
